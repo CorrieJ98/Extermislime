@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bahnj2foakiwc"
+path="res://.godot/imported/Road Walker.mp3-77c5af9391712296c3777955e9faff21.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Road Walker.mp3"
+dest_files=["res://.godot/imported/Road Walker.mp3-77c5af9391712296c3777955e9faff21.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Assets/Hearts/PNG/health_bar/health_bar_decoration.png" type="Texture" id=1]
-[ext_resource path="res://Assets/Hearts/PNG/health_bar/health_bar.png" type="Texture" id=2]
-[ext_resource path="res://Scenes/UI.gd" type="Script" id=3]
+[ext_resource type="Texture" uid="uid://ds08o35y8wqh7" path="res://Assets/Hearts/PNG/health_bar/health_bar_decoration.png" id="1"]
+[ext_resource type="Texture" uid="uid://7f6qhhfem6vd" path="res://Assets/Hearts/PNG/health_bar/health_bar.png" id="2"]
+[ext_resource type="Script" uid="uid://3ha3d8rpxdcm" path="res://Scripts/UI.gd" id="3"]
 
 [node name="UI" type="Control"]
 anchor_left = 0.5

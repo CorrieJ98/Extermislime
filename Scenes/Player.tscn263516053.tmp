@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgb028ys64827"]
+
+[ext_resource type="Script" uid="uid://fqoc1f0qr2gh" path="res://Scenes/Player.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://kj27yfrx6vnh" path="res://Assets/Robot Warfare Asset Pack 24-11-21/Robot Warfare Asset Pack 22-11-24/Soldiers/SquadLeader.png" id="2"]
+
+[sub_resource type="CapsuleShape2D" id="1"]
+radius = 0.0
+height = 0.0
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 3
+script = ExtResource("1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("1")
+
+[node name="ShootTimer" type="Timer" parent="."]
+
+[node name="Rotater" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("2")
+hframes = 5
+vframes = 7
+
+[connection signal="timeout" from="ShootTimer" to="." method="_on_Timer_timeout"]

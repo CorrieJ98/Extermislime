@@ -24,6 +24,17 @@ window/per_pixel_transparency/enabled=true
 
 project/assembly_name="Echo"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/Todo_Manager/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://Scripts/": "yellow",
+"res://addons/": "gray"
+}
+
 [input]
 
 move_north={

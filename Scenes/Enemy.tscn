@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Assets/Enemies/SlimeAnimations/Normal/spritesheet.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/Enemy.gd" type="Script" id=2]
+[ext_resource type="Texture" uid="uid://baqy0bqtyl5my" path="res://Assets/Enemies/SlimeAnimations/Normal/spritesheet.png" id="1"]
+[ext_resource type="Script" uid="uid://cq7dxyqt1fre5" path="res://Scripts/Enemy.gd" id="2"]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 16.0

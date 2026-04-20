@@ -40,6 +40,3 @@ sources/3 = SubResource("TileSetAtlasSource_hk6qd")
 tile_set = SubResource("116")
 rendering_quadrant_size = 32
 format = 2
-
-[node name="Purgatory" type="Marker2D" parent="."]
-position = Vector2(-100, 100)

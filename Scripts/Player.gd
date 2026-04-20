@@ -4,7 +4,7 @@ extends CharacterBody2D
 @onready var rotater = $Rotater
 @onready var sprite = $Sprite
 @onready var ui = $Camera2D/UI
-const bullet_scene = preload("res://Scenes/Bullet.tscn") # FIXME change to an export, customise bullets
+@export var buller_handler : BulletHandler
 @export var rotate_speed = 60
 @export var shooter_timer_wait_time = 0.3
 @export var spawn_point_count = 3
@@ -96,15 +96,7 @@ func ping():
 func _process(delta):
 	var new_rotation = rotater.rotation_degrees + rotate_speed * delta
 	rotater.rotation_degrees = fmod(new_rotation, 360)
-
-func _on_Timer_timeout():
-	if input_held == true:
-		for s in rotater.get_children():
-			var bullet = bullet_scene.instance() # FIXME absolutely lose this
-			get_tree().root.add_child(bullet)
-			bullet.position = s.global_position
-			bullet.rotation = s.global_rotation
-
+	
 func die():
 	get_tree().reload_current_scene()
 	# TODO profile this and manually garbage collect if needed

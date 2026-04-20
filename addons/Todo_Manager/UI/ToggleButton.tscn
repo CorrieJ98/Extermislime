@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bq0tjjng7hdvt"]
+[gd_scene load_steps=5 format=3 uid="uid://bq0tjjng7hdvt"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f41nr"]
 
@@ -20,7 +20,7 @@ corner_radius_bottom_left = 4
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5887s"]
 
-[node name="Button" type="Button" unique_id=924295315]
+[node name="Button" type="Button"]
 theme_override_styles/normal = SubResource("StyleBoxEmpty_f41nr")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_5887s")
 theme_override_styles/hover = SubResource("StyleBoxFlat_rtgj1")

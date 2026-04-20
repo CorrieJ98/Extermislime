@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dxebey42miqiw"]
+[gd_scene load_steps=10 format=3 uid="uid://dxebey42miqiw"]
 
 [ext_resource type="PackedScene" uid="uid://dsi8jkxps7p02" path="res://Scenes/Player.tscn" id="1"]
 [ext_resource type="PackedScene" path="res://Scenes/Enemy.tscn" id="2"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" path="res://Scenes/UI.tscn" id="6"]
 [ext_resource type="PackedScene" uid="uid://iynqkv50y3no" path="res://Scenes/TileMap.tscn" id="7"]
 [ext_resource type="PackedScene" uid="uid://bp30u3qxtgjci" path="res://Scenes/RadialSpawner.tscn" id="7_q68mp"]
+[ext_resource type="PackedScene" uid="uid://cwloqadaw14oy" path="res://Scenes/bullet_handler.tscn" id="8_0iob3"]
+[ext_resource type="PackedScene" uid="uid://chutfyljfv0yg" path="res://Scenes/actor_handler.tscn" id="9_4b75m"]
 
 [node name="MainScene" type="Node2D"]
 script = ExtResource("4")
@@ -32,12 +34,6 @@ anchor_bottom = 0.0
 
 [node name="Enemy" parent="." instance=ExtResource("2")]
 position = Vector2(-265, 86)
-moveSpeed = null
-maxHp = null
-curHp = null
-damage = null
-attackDist = null
-score = null
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3")
@@ -45,7 +41,9 @@ volume_db = -20.194
 autoplay = true
 
 [node name="RadialSpawner" parent="." instance=ExtResource("7_q68mp")]
-max_spawn_radius = null
-next_spawn_coords = null
+
+[node name="BulletHandler" parent="." instance=ExtResource("8_0iob3")]
+
+[node name="ActorHandler" parent="." instance=ExtResource("9_4b75m")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

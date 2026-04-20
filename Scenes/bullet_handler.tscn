@@ -1,7 +1,71 @@
-[gd_scene load_steps=2 format=3 uid="uid://cwloqadaw14oy"]
+[gd_scene load_steps=3 format=3 uid="uid://cwloqadaw14oy"]
 
 [ext_resource type="PackedScene" uid="uid://dnh0bfwxkeypt" path="res://Scenes/Bullet.tscn" id="1_h5amp"]
+[ext_resource type="Script" uid="uid://bb8xkd6y2xr3m" path="res://Scenes/bullet_handler.gd" id="1_jxojn"]
 
 [node name="BulletHandler" type="Node2D"]
+script = ExtResource("1_jxojn")
 
-[node name="Bullet" parent="." instance=ExtResource("1_h5amp")]
+[node name="PoolReference" type="Marker2D" parent="."]
+
+[node name="Bullets" type="Node" parent="."]
+
+[node name="Bullet" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet2" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet3" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet4" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet5" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet6" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet7" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet8" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet9" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet10" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet11" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet12" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet13" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet14" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet15" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet16" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet17" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet18" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet19" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0
+
+[node name="Bullet20" parent="Bullets" instance=ExtResource("1_h5amp")]
+speed = 750.0

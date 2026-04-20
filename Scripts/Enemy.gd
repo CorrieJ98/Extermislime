@@ -21,8 +21,6 @@ var dying = false
 @onready var sprite = $Sprite
 @onready var area2d = $Sprite/Area2D
 
-
-
 func _physics_process(delta):
 	if(!state): return
 	

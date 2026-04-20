@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://chutfyljfv0yg"]
+
+[ext_resource type="PackedScene" uid="uid://dnh0bfwxkeypt" path="res://Scenes/Bullet.tscn" id="1_xyl8e"]
+
+[node name="BulletHandler" type="Node2D"]
+
+[node name="Bullet" parent="." instance=ExtResource("1_xyl8e")]
+
+[node name="PoolReference" type="Marker2D" parent="."]

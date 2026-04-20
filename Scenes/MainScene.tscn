@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://dxebey42miqiw"]
 
 [ext_resource type="PackedScene" uid="uid://dsi8jkxps7p02" path="res://Scenes/Player.tscn" id="1"]
-[ext_resource type="PackedScene" uid="uid://d0eu80t4dbcfi" path="res://Scenes/Enemy.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://Scenes/Enemy.tscn" id="2"]
 [ext_resource type="AudioStream" uid="uid://dfa7xwyieamon" path="res://Assets/Audio/Ultraviolet.mp3" id="3"]
 [ext_resource type="Script" uid="uid://dhoc4y6gdqm6h" path="res://Scripts/MainGame.gd" id="4"]
 [ext_resource type="PackedScene" path="res://Scenes/UI.tscn" id="6"]
